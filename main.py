@@ -26,5 +26,6 @@ def main():
 
     account_1 = BankAccount(3123233312, 3525)
     print(f"Your account number is: {account_1.get_account_number()}")
+    print(f"Your account balance is: {account_1.get_balance()}$")
 
 main()
