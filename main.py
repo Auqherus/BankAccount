@@ -5,7 +5,7 @@ class BankAccount:
         
 
     def get_account_number(self):
-        return self.__account_number
+        return  self.__account_number
 
     def get_balance(self):
         return self.__balance
@@ -21,3 +21,10 @@ class BankAccount:
         elif self.__balance < amount:
             raise ValueError("Insufficient funds")
         self.__balance -= amount
+
+def main():
+
+    account_1 = BankAccount(3123233312, 3525)
+    print(f"Your account number is: {account_1.get_account_number()}")
+
+main()
